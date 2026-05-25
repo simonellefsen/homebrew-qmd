@@ -1,20 +1,20 @@
 class Qmd < Formula
   desc "Query Markup Documents - secure Rust port of the on-device hybrid search engine"
   homepage "https://github.com/simonellefsen/qmd-rust"
-  version "0.6.7"
+  version "0.6.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/simonellefsen/qmd-rust/releases/download/v0.6.7/qmd-aarch64-apple-darwin.tar.xz"
-      sha256 "a5ddcadb0ee7ca124664ab739ae029dce5ac49520285f82591b0e22f1246d685"
+      url "https://github.com/simonellefsen/qmd-rust/releases/download/v0.6.8/qmd-aarch64-apple-darwin.tar.xz"
+      sha256 "543213a15fa9817cf5ca9c736aad6cb7c88eb957ddc6a111e85cdfdf3a117876"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/simonellefsen/qmd-rust/releases/download/v0.6.7/qmd-x86_64-apple-darwin.tar.xz"
-      sha256 "7f374cefa4b4818c2117b14ee35422a2fb6d5624ca149eecc9d1532a5111aaeb"
+      url "https://github.com/simonellefsen/qmd-rust/releases/download/v0.6.8/qmd-x86_64-apple-darwin.tar.xz"
+      sha256 "d98a018b1a61b0f06e346fd2224bb84ee9d5a0574d00a499d2b4d67c2e03ab41"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/simonellefsen/qmd-rust/releases/download/v0.6.7/qmd-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "acd8c7d163225d949858e673b13bd08cb533af68b3d4e6aaec0dfbdec07167d9"
+    url "https://github.com/simonellefsen/qmd-rust/releases/download/v0.6.8/qmd-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "1373e8326493e93ba4ec11dbd2c62a9cdef910e6bc3d36839f0cc27ac9954096"
   end
   license "MIT"
 
